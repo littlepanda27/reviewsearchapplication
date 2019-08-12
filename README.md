@@ -16,8 +16,8 @@ Review Search Application is a standard maven project using Java 8, Spring Boot 
 ### Build Application using jar
 
 ```
-git clone review-search-application
-cd review-search-application
+git clone https://github.com/littlepanda27/reviewsearchapplication.git
+cd reviewsearchapplication
 mvn clean install
 java -jar $path-to-jar $path-to-data-file-location
 ```
