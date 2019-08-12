@@ -16,10 +16,10 @@ Review Search Application is a standard maven project using Java 8, Spring Boot 
 ### Build Application using jar
 
 ```
-$ git clone review-search-application
-$ cd review-search-application
-$ mvn clean install
-$ java -jar $path-to-jar $path-to-data-file-location
+git clone review-search-application
+cd review-search-application
+mvn clean install
+java -jar $path-to-jar $path-to-data-file-location
 ```
 
 ### Launch Application
@@ -30,17 +30,17 @@ To run the app on your local, navigate to localhost:8080/
 
 ### Build Docker Image
 ```
-$ docker build . -t littlepanda27/review-search-application-image:<GIT_SHA> -t littlepanda27/review-search-application-image:latest
+docker build . -t littlepanda27/review-search-application-image:<GIT_SHA> -t littlepanda27/review-search-application-image:latest
 ```
 
 ### Push Docker Image
 ```
-$ docker login
-$ docker push littlepanda27/review-search-application-image:<GIT_SHA>
-$ docker push littlepanda27/review-search-application-image:latest
+docker login
+docker push littlepanda27/review-search-application-image:<GIT_SHA>
+docker push littlepanda27/review-search-application-image:latest
 ```
 
 ### Run Docker Image
 ```
-$ docker run -t -p 8080:8080 littlepanda27/review-search-application-image:latest 
+docker run -t -p 8080:8080 littlepanda27/review-search-application-image:latest 
 ```
